@@ -1,0 +1,25 @@
+{
+  "name": "innomic-auth0",
+  "private": true,
+  "scripts": {
+    "deploy": "pulumi up",
+    "refresh": "pulumi config refresh",
+    "select:dev": "pulumi stack select dev",
+    "select:prod": "pulumi stack select prod",
+    "unselect": "pulumi stack unselect"
+  },
+  "dependencies": {
+    "@pulumi/auth0": "^2.9.0",
+    "@pulumi/pulumi": "^3.34.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "8.18.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "4.7.4"
+  }
+}
